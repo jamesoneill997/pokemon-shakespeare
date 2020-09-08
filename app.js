@@ -12,7 +12,18 @@ app.get('/',(req, res) => {
 
 
 app.get('*', (req,res)=>{
+    pokemonName = JSON.stringify(req.url).substring(2,req.url.length+1)
+
+    const desc = getDescription(pokemonName, (error, response)=>{
+             if(error){
+                 return console.log(error, 'Error fetching pokemon description.')
+             }
+             else{
+                 return console.log(response)
+             }   
+        })
     
+    //res.send("Pokemon Name: " + JSON.stringify(req.url))
 })
 
 
