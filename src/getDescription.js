@@ -10,7 +10,7 @@ const getDescription = (pokeName, callback)=>{
         const {err} = body
         //error handling
         if(error){
-            callback('Error connecting with weather service.', undefined)
+            callback('Error connecting with service.', undefined)
         }
         else if(err){
             callback(err.info, undefined)
@@ -18,7 +18,7 @@ const getDescription = (pokeName, callback)=>{
 
         //send back description (english version)
         else{
-            callback(undefined, body['flavor_text_entries'][0]['flavor_text'])
+            callback(undefined, body['flavor_text_entries'][1]['flavor_text'])
         }
     })
 
