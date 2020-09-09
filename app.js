@@ -1,5 +1,6 @@
 const express = require('express')
 const getDescription = require('./src/getDescription')
+const getTranslation = require('./src/getTranslation')
 
 
 const app = express()
@@ -14,9 +15,18 @@ app.get('*', (req,res)=>{
                 res.send(error, 'Error fetching pokemon description.')
              }
              else{
-                res.send(response)
+                getTranslation(response, (err, resp)=>{
+                    if(error){
+                        res.send(err, 'Error fetching pokemon description.')
+                     }
+                     else{
+                            res.send(resp)
+                        }
+                })
              }   
         })
+
+    
     
     //res.send("Pokemon Name: " + JSON.stringify(req.url))
 })

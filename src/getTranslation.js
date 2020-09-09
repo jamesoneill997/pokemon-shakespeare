@@ -2,6 +2,11 @@ const request = require('postman-request')
 
 //getDescription takes a pokemon name as a parameter and returns an English description
 const getTranslation = (desc, callback)=>{
+    desc = desc.split('\n').join(' ')
+
+    desc = desc.split(' ').join('%20')
+    console.log(desc)
+
     //create API query
     const url = 'https://api.funtranslations.com/translate/shakespeare.json?text=' + desc
     
@@ -18,10 +23,10 @@ const getTranslation = (desc, callback)=>{
 
         //send back description (english version)
         else{
-            callback(undefined, body['contents']['translated'])
+            callback(undefined, body)
         }
     })
 
 }
 
-module.exports = getDescription
+module.exports = getTranslation
