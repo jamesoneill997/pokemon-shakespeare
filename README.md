@@ -11,7 +11,7 @@ A challenge to use the Shakespeare translator and pokeAPI's to provide a shakesp
 
 ## External API Usage
 
-	curl -v  -i -X GET 
+	curl http://localhost:3000/pokemon/{name}
 
 ## Requirements
 
@@ -56,10 +56,9 @@ If you need to update `npm`, run:
 
 ## Install
 
-    $ git clone https://github.com/YOUR_USERNAME/PROJECT_TITLE
-    $ cd PROJECT_TITLE
+    $ git clone https://github.com/jamesoneill997/pokemon-shakespeare.git
+    $ cd {PROJECT_DIRECTORY}
     $ npm install
 
 ## Running the project
-
-    
+	$ node app.js
