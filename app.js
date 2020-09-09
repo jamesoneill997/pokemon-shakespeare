@@ -8,6 +8,7 @@ const port = process.env.PORT || 3000
 
 
 app.get('/pokemon/*', (req,res)=>{
+    //parse query from string
     pokemonName = JSON.stringify(req.url).substring(10,req.url.length+1)
 
     const shakespeareDesc = {

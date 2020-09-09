@@ -1,4 +1,4 @@
-const {getTranslation} = require('./getTranslation')
+const {getTranslation} = require('../src/getTranslation')
 
 it("Should translate English to Shakespearean English",()=>{
     let greeting = getTranslation("Hello,there. How are you today?", (err, translation)=>{

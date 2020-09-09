@@ -7,7 +7,7 @@ const getTranslation = require('../src/getTranslation')
 //findAndTranslate function to bring together the 2 src functions
 const findAndTranslate = (pokeName, callback)=>{
     //return Description passed through translation
-    return getDescription(pokeName, (error, response)=>{
+    callback(undefined, getDescription(pokeName, (error, response)=>{
         if(error){
             //if error, log and return error
             console.log(error)
@@ -16,9 +16,9 @@ const findAndTranslate = (pokeName, callback)=>{
         else{
             //translate
             getTranslation(response, (err, resp)=>{
-                if(error){
+                if(err){
                     //if error, log and return error
-                    console.log(error)
+                    console.log(err)
                     callback(err, 'Error fetching translation.')
                 }
                 
@@ -28,7 +28,8 @@ const findAndTranslate = (pokeName, callback)=>{
                 }
        })
     }   
-})}
+    })
+)}
 
 
 

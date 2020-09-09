@@ -1,0 +1,71 @@
+commit d5d9d95f2f92757ec68b9174396dc51af0803acb
+Author: jamesoneill997 <jamesoneill997@gmail.com>
+Date:   Wed Sep 9 11:45:22 2020 +0100
+
+    refactored findAndTranslate.js
+
+commit 27cf9c7807448015458ccaa3ff240224deddba96
+Author: jamesoneill997 <jamesoneill997@gmail.com>
+Date:   Wed Sep 9 10:13:07 2020 +0100
+
+    added test files for description & translation
+
+commit 17aa9b428a9d8beb7b250273484de7699aba885f
+Author: jamesoneill997 <jamesoneill997@gmail.com>
+Date:   Wed Sep 9 09:51:06 2020 +0100
+
+    added middleware
+
+commit 66342f712a80ff1f0e76398dcbda70bcc66cef2e
+Author: jamesoneill997 <jamesoneill997@gmail.com>
+Date:   Wed Sep 9 01:29:17 2020 +0100
+
+    string formatting in translation function, first working model
+
+commit 6c7ba84af1e3af1761af553021fe7ac765c34f32
+Author: jamesoneill997 <jamesoneill997@gmail.com>
+Date:   Wed Sep 9 01:13:38 2020 +0100
+
+    added getDescription function logic
+
+commit dd3f826e2b2cc5db506e64058ab6f9bde040bb03
+Author: jamesoneill997 <jamesoneill997@gmail.com>
+Date:   Tue Sep 8 23:30:14 2020 +0100
+
+    query parsing and logging of pokemon description
+
+commit 71fbea6aaad0cf74272229dfaa5173caf3c97077
+Author: jamesoneill997 <jamesoneill997@gmail.com>
+Date:   Tue Sep 8 22:49:01 2020 +0100
+
+    setup root endpoint with express
+
+commit 80e37761ca55521ddb04d5086c568343a2803932
+Author: jamesoneill997 <jamesoneill997@gmail.com>
+Date:   Tue Sep 8 22:43:55 2020 +0100
+
+    refactored getDescription and commented
+
+commit 7f7f08b9e0ce381324a2b9146fc6b2cb2ec0ecb5
+Author: jamesoneill997 <jamesoneill997@gmail.com>
+Date:   Tue Sep 8 22:35:53 2020 +0100
+
+    added getDescription function
+
+commit 091e237f5d11e3d9a9cdf2d4b0cc95ec0596c70b
+Author: jamesoneill997 <jamesoneill997@gmail.com>
+Date:   Sun Sep 6 22:04:29 2020 +0100
+
+    set up file structure
+
+commit fc1155e20f5674cedcf92538b5bb44814d3cde91
+Author: jamesoneill997 <jamesoneill997@gmail.com>
+Date:   Sat Sep 5 15:52:58 2020 +0100
+
+    added planning content to ReadMe
+
+commit 9b1f9dfbe7d5aedbb03a4aae80debc0324a008d5
+Author: James O'Neill <36668255+jamesoneill997@users.noreply.github.com>
+Date:   Sat Sep 5 14:52:26 2020 +0100
+
+    Initial commit
