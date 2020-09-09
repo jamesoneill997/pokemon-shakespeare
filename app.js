@@ -7,12 +7,20 @@ const app = express()
 const port = process.env.PORT || 3000
 
 
-app.get('*', (req,res)=>{
-    pokemonName = JSON.stringify(req.url).substring(2,req.url.length+1)
+app.get('/pokemon/*', (req,res)=>{
+    pokemonName = JSON.stringify(req.url).substring(10,req.url.length+1)
 
     const shakespeareDesc = {
     "name": pokemonName,
-    "description": findAndTranslate(pokemonName)
+    "description": findAndTranslate(pokemonName, (err, description)=>{
+        if(err){
+            return err
+        }
+    
+        else{
+            return description
+        }
+    })
     }
 
 

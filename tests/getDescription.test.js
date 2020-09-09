@@ -1,4 +1,4 @@
-const {getDescription} = require('./getDescription')
+const {getDescription} = require('../src/getDescription')
 
 it("Should return pokemon description",()=>{
     let desc = getDescription("Bulbasaur", (err, description)=>{
