@@ -1,0 +1,25 @@
+{
+  "name": "pokemon-shakespeare",
+  "version": "1.0.0",
+  "description": "A challenge to use the Shakespeare translator and pokeAPI's to provide a shakespearean description of a given pokemon via an API call.",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha **/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesoneill997/pokemon-shakespeare.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesoneill997/pokemon-shakespeare/issues"
+  },
+  "homepage": "https://github.com/jamesoneill997/pokemon-shakespeare#readme",
+  "devDependencies": {
+    "mocha": "^8.1.3"
+  }
+}
